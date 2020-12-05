@@ -1,0 +1,40 @@
+A board of size m×n is given. An agent occupies a position in this board denoted by ‘1’. Every other grid can either be free (0), obstacle (-1) or occupied by a coin (10). The agent must move from its initial position taking a maximum of t steps. A step can be up, down, right, left, in the same order of priority with up having the maximum priority. The agent intends to pick up as many coins as possible within t steps. Landing on a cell with a coin is enough to pick it up. Print the total number of coins that the agent can pick up. Hint: For the test cases, you do not need any heuristics.
+
+Input Format: The first input is the number of test cases. For every test case, the first input is m (number of rows), n (number of columns) and t (maximum number of steps). Thereafter the next m rows have n integers each denoting the grid.
+
+Output Format: For every input, one number that prints the total number of coins that can be collected.
+
+Sample Input
+
+4
+5 5 7
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 0 10
+5 5 6
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 0 10
+4 5 15
+1 0 0 0 0
+-1 -1 -1 0 -1
+10 0 10 0 0
+-1 -1 10 -1 0
+4 5 8
+1 0 0 0 0
+-1 -1 -1 0 -1
+10 0 10 0 0
+-1 -1 10 -1 0
+ 
+
+Sample Output
+
+4
+3
+3
+2
+ 

@@ -1,0 +1,26 @@
+Suppose both agents are competing and want to pick up the maximum number of coins possible. Both agents take turns, one after the other, starting from the 1st agent who goes first. The search for a solution should go to a maximum depth of d by any agent. Simulate the game till there are no more coins left or a maximum t steps, whichever is earlier. Use heuristic estimate as the difference in coins collected.
+
+Input Format: The first input is the number of test cases. For every test case, the first input is m (number of rows), n (number of columns), d (maximum depth) and t (maximum number of moves to output). Thereafter the next m rows have n integers each denoting the grid.
+
+Output Format: For every input, print the move taken by the agent whose turn it is as per the game logic, for a maximum of t such turns.
+
+Sample Input
+
+2
+5 5 10 10
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 2 10
+4 5 10 10
+1 0 0 0 10
+-1 -1 -1 0 -1
+10 2 10 0 0
+-1 -1 10 -1 0
+ 
+
+Sample Output
+
+down up down up up up down down right up 
+right right right down right up down down up up 

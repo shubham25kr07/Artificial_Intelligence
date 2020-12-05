@@ -1,0 +1,40 @@
+For question 1a, print the path (in terms of the sequence of action names as per the priority detailed in 1a), instead of the cost. The path should be only till the maximum possible coins have been picked up. Do not move the agent unnecessarily after collecting the maximum number of coins. Print NIL if the agent does not move.
+
+Input Format: Same as question 1a.
+
+Output Format: For every question 1 line printing the sequence of actions separated by a space.
+
+Sample Input
+
+4
+5 5 7
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 0 10
+5 5 6
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 0 10
+4 5 15
+1 0 0 0 0
+-1 -1 -1 0 -1
+10 0 10 0 0
+-1 -1 10 -1 0
+4 5 8
+1 0 0 0 0
+-1 -1 -1 0 -1
+10 0 10 0 0
+-1 -1 10 -1 0
+ 
+
+Sample Output
+
+down down right up right right right 
+down down down up right 
+right right right down down left down up left left 
+right right right down down left down 
+ 

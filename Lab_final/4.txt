@@ -1,0 +1,31 @@
+In question 3, use the heuristic estimate as:
+
+Getting a coin earlier is preferable to getting the same coin again. Apply a penalty of εd to encourage early picking up of the coins, where ε is 0.0001and d is the depth at which the coin was picked.
+
+
+For making an estimate, the agent that has a smaller distance to the remaining coins is preferred. So, getting closer to a coin is preferable. The heuristic function is thus difference in coins collected + 1/(m+n+1) * (distance to nearest coin for min – distance to nearest coin for max).  
+
+Input Format: Same as question 3
+
+Output Format: Same as question 3
+
+Sample Input
+
+2
+5 5 10 1000
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 2 10
+4 5 10 1000
+1 0 0 0 10
+-1 -1 -1 0 -1
+10 2 10 0 0
+-1 -1 10 -1 0
+ 
+
+Sample Output
+
+down right down up down left up up right up up right 
+right right right down right up right left left left 

@@ -1,0 +1,39 @@
+Extend question 1 to 2 agents. The first agent is marked as 1 and the second agent is marked as 2. At any time only one agent may move, however you decide which agent moves next. The preference is moving agent 1in contrast to agent 2, while the actions internally have the same preference as used earlier. It is possible for both agents to stand on a grid simultaneously.
+
+Input Format: Same as question 1a.
+
+Output Format: Same as question 1a
+
+Sample Input
+
+4
+5 5 11
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 2 10
+5 5 8
+1 -1 -1 -1 -1
+0 0 0 10 10
+10 10 0 0 -1
+10 0 0 0 0
+-1 -1 0 2 10
+4 5 10
+1 0 0 0 10
+-1 -1 -1 0 -1
+10 2 10 0 0
+-1 -1 10 -1 0
+4 5 5
+1 0 0 0 10
+-1 -1 -1 0 -1
+10 2 10 0 0
+-1 -1 10 -1 0
+ 
+
+Sample Output
+
+6
+5
+4
+3
